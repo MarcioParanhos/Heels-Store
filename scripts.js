@@ -3,7 +3,7 @@ const catalog = [
     id: 1,
     name: "Lingerie Cinza",
     brand: "INSIDER",
-    price: 135,
+    price: 135.88,
     fileImgName: "Product-1.jpeg",
     feminine: true,
   },
