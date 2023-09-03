@@ -15,7 +15,10 @@
   </head>
 
   <body>
-    <section id="cart" class="fixed top-0 right-[0px] bg-orange-600 h-screen w-[360px] text-slate-200">
+    <section
+      id="cart"
+      class="fixed top-0 right-[0px] bg-orange-500 h-screen w-[360px] text-slate-200 z-50 duration-200 p-5 flex flex-col justify-between"
+    >
       <div id="header-cart" class="flex m-4 justify-between">
         <p>Meu Carrinho</p>
         <button id="close-cart">
@@ -23,27 +26,32 @@
         </button>
       </div>
       <section id="products-cart">
-        <p>CAMISA LARGA COM BOLSOS</p>
-        <p>CALÇA RASGADA</p>
-        <p>CAMISA DO CARALHO</p>
       </section>
       <p id="total-price">R$ 200</p>
       <button class="bg-slate-200 text-slate-900 p-1">Finalizar Compra</button>
     </section>
 
-    <header class="flex bg-orange-600 h-32 p-2 justify-between">
+    <header
+      class="flex bg-orange-600 h-32 p-2 justify-between shadow-lg shadow-orange-300"
+    >
       <img src="./assets/logo/Heels Store.svg" alt="Logo da Heels Store" />
       <div class="text-slate-200 flex gap-5 mx-5">
-        <button><i class="fa-solid fa-user"></i> Historico</button>
-        <button id="open-cart"><i class="fa-solid fa-cart-shopping"></i> Carrinho</button>
+        <button><i class="fa-solid fa-user"></i> HISTORICO</button>
+        <button id="open-cart">
+          <i class="fa-solid fa-cart-shopping"></i> CARRINHO
+        </button>
       </div>
     </header>
 
     <main>
-      <section id="container-produto" class="flex flex-wrap"></section>
+      <section
+        id="container-produto"
+        class="mt-10 flex flex-wrap justify-center"
+      ></section>
     </main>
 
     <footer></footer>
+    <!-- Module serve para ler paginas de scripts dentro do arquivo script -->
     <script type="module" src="scripts.js"></script>
   </body>
 </html>
