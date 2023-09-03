@@ -1,3 +1,5 @@
+import { initCart } from "./src/menuCart";
+
 const catalog = [
   {
     id: 1,
@@ -23,12 +25,20 @@ const catalog = [
     fileImgName: "Product-3.jpeg",
     masculine: true,
   },
+  {
+    id: 4,
+    name: "Camisa Preta",
+    brand: "INSIDER",
+    price: 135,
+    fileImgName: "Product-4.jpeg",
+    masculine: true,
+  },
 ];
 
 //For Simplificado para mostrar todos os itens da lista (Para cada productCatalog de catalog)
 for (const productCatalog of catalog) {
   //Monta o HTML com os dados do banco de dados
-  const productCard = `<div class='border-solid border-2 border-sky-500 w-52 my-2' id="card-produto-${productCatalog.id}">
+  const productCard = `<div class='border-solid border-2 border-sky-500 w-52 my-2 m-2' id="card-produto-${productCatalog.id}">
     <img src="./assets/img/${productCatalog.fileImgName}" alt="Produto 1 do Heels Store" style="height: 300px;"/>
     <p>${productCatalog.brand}</p>
     <p>${productCatalog.name}</p>
@@ -38,3 +48,5 @@ for (const productCatalog of catalog) {
   //Adiciona o HTML no container selecionado pelo ID
   document.getElementById("container-produto").innerHTML += productCard;
 }
+
+initCart()

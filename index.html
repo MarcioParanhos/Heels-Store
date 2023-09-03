@@ -4,19 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Heels Store</title>
   </head>
 
   <body>
-    <header></header>
+    <section id="cart" class="fixed top-0 right-[0px] bg-orange-600 h-screen w-[360px] text-slate-200">
+      <div id="header-cart" class="flex m-4 justify-between">
+        <p>Meu Carrinho</p>
+        <button id="close-cart">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+      </div>
+      <section id="products-cart">
+        <p>CAMISA LARGA COM BOLSOS</p>
+        <p>CALÇA RASGADA</p>
+        <p>CAMISA DO CARALHO</p>
+      </section>
+      <p id="total-price">R$ 200</p>
+      <button class="bg-slate-200 text-slate-900 p-1">Finalizar Compra</button>
+    </section>
+
+    <header class="flex bg-orange-600 h-32 p-2 justify-between">
+      <img src="./assets/logo/Heels Store.svg" alt="Logo da Heels Store" />
+      <div class="text-slate-200 flex gap-5 mx-5">
+        <button><i class="fa-solid fa-user"></i> Historico</button>
+        <button id="open-cart"><i class="fa-solid fa-cart-shopping"></i> Carrinho</button>
+      </div>
+    </header>
 
     <main>
-      <section id="container-produto" class="flex">
-       
-      </section>
+      <section id="container-produto" class="flex flex-wrap"></section>
     </main>
 
     <footer></footer>
-    <script src="scripts.js"></script>
+    <script type="module" src="scripts.js"></script>
   </body>
 </html>
