@@ -28,7 +28,7 @@ const catalog = [
 //For Simplificado para mostrar todos os itens da lista (Para cada productCatalog de catalog)
 for (const productCatalog of catalog) {
   //Monta o HTML com os dados do banco de dados
-  const productCard = `<div id="card-produto">
+  const productCard = `<div id="card-produto-${productCatalog.id}">
     <img src="./assets/img/${productCatalog.fileImgName}" alt="Produto 1 do Heels Store" style="height: 300px;"/>
     <p>${productCatalog.brand}</p>
     <p>${productCatalog.name}</p>
