@@ -27,6 +27,7 @@ const catalog = [
 
 //For Simplificado para mostrar todos os itens da lista (Para cada productCatalog de catalog)
 for (const productCatalog of catalog) {
+  //Monta o HTML com os dados do banco de dados
   const productCard = `<div id="card-produto">
     <img src="./assets/img/${productCatalog.fileImgName}" alt="Produto 1 do Heels Store" style="height: 300px;"/>
     <p>${productCatalog.brand}</p>
@@ -34,6 +35,6 @@ for (const productCatalog of catalog) {
     <p>R$ ${productCatalog.price}</p>
     <button>Adicionar</button>
     </div>`;
-
+  //Adiciona o HTML no container selecionado pelo ID
   document.getElementById("container-produto").innerHTML += productCard;
 }
