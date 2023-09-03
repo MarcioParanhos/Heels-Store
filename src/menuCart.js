@@ -1,4 +1,4 @@
-import { catalog } from "../catalog";
+import { catalog } from "./catalog";
 
 // Funcionalidades de mostrar e ocultar o carrinho
 function openCart() {
@@ -26,7 +26,7 @@ export function addToCart(idProduct) {
     <i class="fa-solid fa-circle-xmark text-slate-500 hover:text-slate-800"></i>
   </button>
   <img class="h-24 rounded-lg" src="./assets/img/${product.fileImgName}" alt="Carrinho: ${product.name}">
-  <div class="py-2">
+  <div class="p-2">
     <p class="text-slate-900 text-sm">${product.name}</p>
     <p class="text-slate-400 text-xs">Tamanho: M</p>
     <p class="text-green-700 text-lg">R$ ${product.price}</p>
