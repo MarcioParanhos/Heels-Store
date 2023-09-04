@@ -1,7 +1,7 @@
 // Catalogo de produtos para o site
 export const catalog = [
     {
-      id: 1,
+      id: '1',
       name: "Lingerie Cinza",
       brand: "INSIDER",
       price: 135.88,
@@ -9,7 +9,7 @@ export const catalog = [
       feminine: true,
     },
     {
-      id: 2,
+      id: '2',
       name: "Vestido Preto",
       brand: "INSIDER",
       price: 80,
@@ -17,7 +17,7 @@ export const catalog = [
       feminine: true,
     },
     {
-      id: 3,
+      id: '3',
       name: "Camisa Marrom",
       brand: "INSIDER",
       price: 115,
@@ -25,7 +25,7 @@ export const catalog = [
       masculine: true,
     },
     {
-      id: 4,
+      id: '4',
       name: "Camisa Preta",
       brand: "INSIDER",
       price: 135,
@@ -33,7 +33,7 @@ export const catalog = [
       masculine: true,
     },
     {
-      id: 5,
+      id: '5',
       name: "Calcinha Minimal",
       brand: "INSIDER",
       price: 69,
@@ -41,7 +41,7 @@ export const catalog = [
       feminine: true,
     },
     {
-      id: 6,
+      id: '6',
       name: "Calça Always Ready Feminino",
       brand: "INSIDER",
       price: 649,
@@ -49,15 +49,15 @@ export const catalog = [
       feminine: true,
     },
     {
-      id: 7,
+      id: '7',
       name: "Tech T-Shirt Long Sleeve",
       brand: "INSIDER",
-      price: 649,
+      price: 159,
       fileImgName: "Product-7.jpeg",
       masculine: true,
     },
     {
-      id: 8,
+      id: '8',
       name: "Tech T-Shirt Long Sleeve Feminina",
       brand: "INSIDER",
       price: 189,

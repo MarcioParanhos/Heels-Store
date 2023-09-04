@@ -16,7 +16,9 @@ export function renderCatalog() {
     //Adiciona o HTML no container selecionado pelo ID
     document.getElementById("container-produto").innerHTML += productCard;
   }
-  for(const productCatalog of catalog) {
-    document.getElementById(`add-${productCatalog.id}`).addEventListener('click', () => addToCart(productCatalog.id))
-}
+  for (const productCatalog of catalog) {
+    document
+      .getElementById(`add-${productCatalog.id}`)
+      .addEventListener("click", () => addToCart(productCatalog.id));
+  }
 }

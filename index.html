@@ -17,7 +17,7 @@
   <body>
     <section
       id="cart"
-      class="fixed top-0 right-[0px] bg-orange-500 h-screen w-[360px] text-slate-200 z-50 duration-200 p-5 flex flex-col justify-between"
+      class="fixed top-0 right-[-360px] bg-orange-500 h-screen w-[360px] text-slate-200 z-50 duration-200 p-5 flex flex-col justify-between"
     >
       <div id="header-cart" class="flex m-4 justify-between">
         <p>MEU CARRINHO</p>
@@ -25,7 +25,7 @@
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
-      <section id="products-cart"></section>
+      <section class="h-3/5 overflow-y-auto flex flex-col gap-2" id="products-cart"></section>
       <p id="total-price">R$ 200</p>
       <button class="bg-slate-200 text-slate-900 p-1">Finalizar Compra</button>
     </section>
